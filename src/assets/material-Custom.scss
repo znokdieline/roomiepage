@@ -1,0 +1,38 @@
+.word{
+	--vh: 6.66px;
+	color: #191a1a;
+	letter-spacing: 0.0em;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	overflow-wrap: break-word;
+	display: inline-block;
+	line-height: 1em;
+	overflow: hidden;
+}
+
+.letter{
+	--vh: 6.66px;
+	color: #191a1a;
+	letter-spacing: 0.0em;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	will-change: transform;
+	overflow-wrap: break-word;
+	display: inline-block;
+	line-height: 1em;
+	opacity: 1;
+	transform: translateY(0%);
+
+}
