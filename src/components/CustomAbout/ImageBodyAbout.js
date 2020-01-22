@@ -5,21 +5,21 @@ import { makeStyles } from '@material-ui/core/styles';
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 
-import ImageBack from "assets/img/office_tor.jpg"
+import ImageRobot from "assets/img/roboto.jpg"
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
 
 const useStyles = makeStyles(styles);
 
-export default function ImageBody(props){
+export default function ImageBodyAbout(props){
     const classes = useStyles();    
     return(
         <div>
             <div className={classes.section}>
                 <GridContainer>
                     <GridItem>
-                    <img src={ImageBack} alt='off' width="100%" />
+                    <img src={ImageRobot} alt='off' width="100%" />
                     </GridItem>
                 </GridContainer>
             </div>

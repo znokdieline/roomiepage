@@ -1,6 +1,7 @@
 import React from 'react';
 // import classNames from "classnames";
 import { makeStyles } from '@material-ui/core/styles';
+import { Link as RouterLink } from 'react-router-dom';
 
 // Component
 import Header from "components/Header/Header.js";
@@ -19,6 +20,8 @@ export default function CustomNavBar(props){
             <div>
             <Header
                 brand="Roomie IT"
+                component={RouterLink}
+                to='/'
                 rightLinks={<HeaderLinks />}
                 fixed
                 color="transparent"
@@ -32,3 +35,41 @@ export default function CustomNavBar(props){
         </div>
     );
 };
+// {/* <Header
+//     brand="Navbar with profile"
+//     rightLinks={
+//       <List className={classes.list}>
+//         <ListItem className={classes.listItem}>
+//           <Button
+//             href="#pablo"
+//             className={classes.navLink}
+//             onClick={e => e.preventDefault()}
+//             color="transparent"
+//           >
+//             Discover
+//           </Button>
+//         </ListItem>
+//         <ListItem className={classes.listItem}>
+//           <Button
+//             href="#pablo"
+//             className={classes.navLink}
+//             onClick={e => e.preventDefault()}
+//             color="transparent"
+//           >
+//             Wishlist
+//           </Button>
+//         </ListItem>
+//         <ListItem className={classes.listItem}>
+//           <Button
+//             href="#pablo"
+//             className={classes.registerNavLink}
+//             onClick={e => e.preventDefault()}
+//             color="rose"
+//             round
+//           >
+//             Register
+//           </Button>
+//         </ListItem>
+//       </List>
+//     }
+//   /> */}

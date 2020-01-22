@@ -11,7 +11,9 @@ import TextMiddle from "components/CustomComponetsPage/TextMiddle";
 import ImageVideoPart from "components/CustomComponetsPage/ImageVideoPart";
 import TextMiddleTwo from "components/CustomComponetsPage/TextMiddleTwo";
 import ImageBody from "components/CustomComponetsPage/ImageBody";
-import ServicesSection from "components/CustomComponetsPage/ServicesSection"
+import ServicesSection from "components/CustomComponetsPage/ServicesSection";
+import BlogSpace from "components/CustomComponetsPage/BlogSpace";
+import Footer from "components/CustomComponetsPage/Footer";
 
 // Sections
 
@@ -20,7 +22,6 @@ const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
     const classes = useStyles();
-    // const { ...rest } = props;
     return (
         <div>
             <CustomNavBar/>
@@ -32,6 +33,8 @@ export default function LandingPage(props) {
             <ImageBody/>
             </div>
             <ServicesSection/>
+            <BlogSpace/>
+            <Footer/>
         </div>
     )
 };

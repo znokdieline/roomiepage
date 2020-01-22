@@ -1,7 +1,8 @@
 /*eslint-disable*/
 import React from "react";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+// import { MemoryRouter as Router } from 'react-router';
+import { Link as RouterLink } from 'react-router-dom';
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -23,9 +24,9 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
-          href="#"
+          component={RouterLink}
+          to='/about'
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
         ABOUT US
@@ -33,19 +34,9 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="/"
+          component={RouterLink}
+          to='/approach'
           color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-        WORK
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="/"
-          color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
         APPROACH
@@ -53,9 +44,18 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="/"
+          component={RouterLink}
+          to="/work"
           color="transparent"
-          target="_blank"
+          className={classes.navLink}
+        >
+        WORK
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href=""
+          color="transparent"
           className={classes.navLink}
         >
         CAREERS
@@ -63,9 +63,8 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="/"
+          href=""
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
         LET'S TALK

@@ -5,14 +5,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 
-import ImageBack from "assets/img/office_tor.jpg"
+import ImageBack from "assets/img/image_s.jpg"
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
 
 const useStyles = makeStyles(styles);
 
-export default function ImageBody(props){
+export default function Aboutimagebody(props){
     const classes = useStyles();    
     return(
         <div>
